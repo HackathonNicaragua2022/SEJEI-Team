@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <?php
   include ("models/conexion/Conexion.php");
   //include ("Encryptar.php");
@@ -12,7 +10,6 @@
   }
 ?>
 
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 <!DOCTYPE html>
 <html lang="es">
 
@@ -50,10 +47,6 @@
 
 </head>
 
-<<<<<<< HEAD
-<body>
-
-=======
 <body style="background-color:#5B1F00">
 
   <?php
@@ -78,7 +71,6 @@
     }
 
   ?>
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 
     <div id="wrapper">
 
@@ -175,8 +167,4 @@
 
 </body>
 
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
