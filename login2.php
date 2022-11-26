@@ -1,17 +1,9 @@
 
 <?php
-<<<<<<< HEAD
-  include ("conexion/Conexion.php");
-  //include ("Encryptar.php");
-  $bd = new Conexion();
-  //$enc = new Encryptar();
-  session_start();
-=======
   include ("models/conexion/Conexion.php");
   $bd = new Conexion();
   session_start();
   $mysqli=new mysqli("localhost","root","12345","subastas");
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
   if(isset($_SESSION["id_usuario"])){
     header("Location: index.php");
   }
@@ -38,11 +30,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-<<<<<<< HEAD
-    <link href="css/sb-admin.css" rel="stylesheet">
-=======
     <link href="|css/sb-admin.css" rel="stylesheet">
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 
     <!-- Morris Charts CSS -->
     <link href="css/plugins/morris.css" rel="stylesheet">
@@ -59,26 +47,12 @@
 
 </head>
 
-<<<<<<< HEAD
-<body background="images/fondovaca.png">
-=======
 <body background="models/images/fondovaca.png">
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 
     <?php
       if(isset($_POST["entrar"])){
 
         $user = $_POST["user"];
-<<<<<<< HEAD
-        $pass = md5($_POST["pass"]);
-
-        $query = "SELECT * from usuario where user='$user' and pass='$pass';";
-
-        $result = $bd->select($query);
-
-        if($result->num_rows > 0){
-
-=======
         $pass = $_POST["pass"];
 
         //Inicia consulta de los usuarios
@@ -89,7 +63,6 @@
 
         if($result->num_rows > 0){
           //Si los datos son correctos inicia sesión y redirige index.php
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
           while($row = $result->fetch_assoc()){
             $id_us = $row["id_usuario"];
             $nombre = $row["nombre"];
@@ -97,20 +70,12 @@
 
           }
 
-<<<<<<< HEAD
-          //echo "hoola";
-=======
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 
           $_SESSION["id_usuario"] = $id_us;
           $_SESSION["nomb_comp"] = $nombre." ".$paterno;
           header("Location: index.php");
         }else{
-<<<<<<< HEAD
-          echo "<script>alert('Datos incorrectos');</script>";
-=======
           echo "<script>alert('Datos incorrectos');</script>"; //Si los datos no existen muestra alerta
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
         }
 
       }
@@ -156,11 +121,7 @@
                         </form>
                     </div>
                     <div class="panel-footer">
-<<<<<<< HEAD
-                      <p>¿No tienes una cuenta aún? <a href="registro.php">Regístrate aquí</a></p>
-=======
                       <p>¿No tienes una cuenta aún? <a href="view/registro.php">Regístrate aquí</a></p>
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
                     </div>
                 </div>
             </div>
