@@ -2,30 +2,18 @@
 <html>
 <head>
 	<meta charset="utf-8">
-<<<<<<< HEAD
-	<title>Landing Page</title>
-	<link rel="icon" type="image/png" href="assets/img/loguito.png">
-=======
 	<title>LiveStock</title>
 	<link rel="icon" type="image/png" href="models/assets/img/loguito.png">
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<header>
 		<div class="content-header">
-<<<<<<< HEAD
-			<div class="logo"><img src="assets/img/loguito2.png"></div>
-			<div class="item"><a href="#inicio">Conocenos</a></div>
-			<div class="item"><a href="#productos">Productos</a></div>
-			<div class="item"><a href="#contacto">Contactanos</a></div>
-=======
 			<div class="logo"><img src="models/assets/img/loguito2.png"></div>
 			<div class="item"><a href="#inicio">Conócenos</a></div>
 			<div class="item"><a href="#productos">Productos</a></div>
 			<div class="item"><a href="#contacto">Contáctanos</a></div>
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 		</div>
 	</header>
 	<section>
@@ -36,11 +24,7 @@
 				<center><button onclick="location.href='login2.php'">Subasta</button></center>
 			</div>
 			<div class="banner-img">
-<<<<<<< HEAD
-				<img src="assets/img/vaca1.png">
-=======
 				<img src="models/assets/img/vaca1.png">
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 			</div>
 		</div>
 	</section>
@@ -59,11 +43,7 @@
 				<div class="parts">
 					<h2>De lo real a lo virtual</h2>
 					<p>Todas las subastas ganaderas siempre habían sido de forma presencial, hasta que apareció la tecnología.</p>
-<<<<<<< HEAD
-					<p>Gracias a los nuevos talentos de hoy en dia y al avance de la virtualización, pudimos crear un sistema que permita facilitar la adquisición de estos animales.</p>
-=======
 					<p>Gracias a los nuevos talentos de hoy en día y al avance de la virtualización, pudimos crear un sistema que permita facilitar la adquisición de estos animales.</p>
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 				</div>
 			</div>
 		</section>
@@ -72,44 +52,28 @@
 			<div class="div-grid">
 				<div class="grid-item">
 					<div class="content-img-pro">
-<<<<<<< HEAD
-						<img src="assets/img/brahman.jpg" style="height:270px">
-=======
 						<img src="models/assets/img/brahman.jpg" style="height:270px">
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 					</div>
 					<h3>Brahman</h3>
 					<p>Ideal para la producción de carne</p>
 				</div>
 				<div class="grid-item">
 					<div class="content-img-pro">
-<<<<<<< HEAD
-						<img src="assets/img/brangus.jpg" style="height:270px">
-=======
 						<img src="models/assets/img/brangus.jpg" style="height:270px">
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 					</div>
 					<h3>Brangus</h3>
 					<p>Adecuado para la crianza comercial</p>
 				</div>
 				<div class="grid-item">
 					<div class="content-img-pro">
-<<<<<<< HEAD
-						<img src="assets/img/simental.jpg" style="height:270px">
-=======
 						<img src="models/assets/img/simental.jpg" style="height:270px">
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 					</div>
 					<h3>Simental</h3>
 					<p>Muy buena aptitud biológica</p>
 				</div>
 				<div class="grid-item">
 					<div class="content-img-pro">
-<<<<<<< HEAD
-						<img src="assets/img/pardosuizo.jpg" style="height:270px">
-=======
 						<img src="models/assets/img/pardosuizo.jpg" style="height:270px">
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 					</div>
 					<h3>Pardo suizo</h3>
 					<p>Alusivo a una raza de ganado lechero</p>
@@ -117,28 +81,16 @@
 			</div>
 		</section>
 		<section id="contacto">
-<<<<<<< HEAD
-			<h1>Comunicate con nosotros</h1>
-			<div class="div-flex">
-				<div class="parts">
-					<h2>Tienes pensado un evento o reunión?</h2>
-					<p>Dejanos un mensaje con lo que necesitas saber para resolver cualquier duda que tengas</p>
-=======
 			<h1>Comunícate con nosotros</h1>
 			<div class="div-flex">
 				<div class="parts">
 					<h2>¿Tienes pensado un evento o reunión?</h2>
 					<p>Déjanos un mensaje con lo que necesitas saber para resolver cualquier duda que tengas</p>
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 					<h4>Correo: livestock@gmail.com</h4>
 					<h4>Celulares: 87906754 / 25120989</h4>
 				</div>
 				<div class="parts">
-<<<<<<< HEAD
-					<h2 style="margin-bottom: 10px;">Envia tu consulta ahora!</h2>
-=======
 					<h2 style="margin-bottom: 10px;">¡Envía tu consulta ahora!</h2>
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 					<form>
 						<label>Nombre</label>
 						<input type="text" id="nombre" placeholder="Nombre">
@@ -165,12 +117,8 @@
 		<center><p>LiveStock | 2022</p></center>
 	</footer>
 	<script type="text/javascript">
-<<<<<<< HEAD
-		function send_mensaje(){
-=======
 		function sendMensaje(){
 
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 			if (document.getElementById("nombre").value=="" ||
 				document.getElementById("dni").value=="" ||
 				document.getElementById("correo").value==""||
