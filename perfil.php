@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 <?php
   //Se incluye el archivo Conexion.php que contiene la clase usada para la conexion a la bd
   include ("models/conexion/Conexion.php");
@@ -15,7 +12,6 @@
     header("Location: login.php");
   }
 ?>
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 
 <!DOCTYPE html>
 <html lang="es">
@@ -54,11 +50,6 @@
 
 </head>
 
-<<<<<<< HEAD
-<body>
-
-  
-=======
 <body style="background-color:#5B1F00">
 
   <?php
@@ -117,7 +108,6 @@
     }
 
   ?>
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 
     <div id="wrapper">
 
@@ -135,18 +125,10 @@
             </div>
             <!-- Top Menu Items -->
             <?php
-<<<<<<< HEAD
-              //Se incluye el archivo que contiene el header
-=======
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
               include ("header.php");
             ?>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <?php
-<<<<<<< HEAD
-              //Se incluye el archivo que contiene el sidebar
-=======
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
               include ("sidebar.php");
             ?>
             <!-- /.navbar-collapse -->
@@ -164,11 +146,7 @@
                         </h1>
                         <ol class="breadcrumb">
                             <li>
-<<<<<<< HEAD
-                                <i class="fa fa-dashboard"></i> Consola
-=======
                                 <i class="fa fa-dashboard"></i> Dashboard
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
                             </li>
                             <li class="active">
                                 <i class="fa fa-user"></i> Perfil
@@ -177,9 +155,6 @@
                     </div>
                 </div>
 
-<<<<<<< HEAD
-               
-=======
                 <?php
                   $id_user = $_SESSION["id_usuario"];
                   $res = $bd->select("SELECT * from usuario where id_usuario=$id_user");
@@ -198,7 +173,6 @@
 
                       ?>
 
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
                       <div class="row">
 
                         <form role="form" action="" method="post" enctype="multipart/form-data">
@@ -265,14 +239,11 @@
                       </div>
                       <!-- /.row -->
 
-<<<<<<< HEAD
-=======
                       <?php
                     }
                   }
                 ?>
 
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
 
 
             </div>
@@ -297,8 +268,4 @@
 
 </body>
 
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
