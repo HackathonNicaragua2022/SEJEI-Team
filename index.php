@@ -1,18 +1,11 @@
 <?php
   //Se incluye el archivo Conexion.php que contiene la clase usada para la conexion a la bd
-<<<<<<< HEAD
-  include ("conexion/Conexion.php");
-=======
   include ("models/conexion/Conexion.php");
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
   //Se crea el objeto conexion
   $bd = new Conexion();
   //Se inicia la sesion o se propaga
   session_start();
-<<<<<<< HEAD
-=======
   $mysqli = new mysqli("localhost", "root", "12345", "subastas");
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
   //Condicion que no deja entrar al index a menos que exista una variable de session
   if(!isset($_SESSION["id_usuario"])){
     //Redirecciona al login
@@ -71,20 +64,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-<<<<<<< HEAD
-                <a class="navbar-brand" href="subastas.php">Subastas</a>
-=======
                 <a class="navbar-brand" href="subastas.php"><font color="white">Subastas</font></a>
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
             </div>
             <!-- Top Menu Items -->
             <?php
               //Se incluye el archivo que contiene el header
-<<<<<<< HEAD
-              include ("header.php");
-=======
               include ("vheader.php");
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
             ?>
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <?php
@@ -113,47 +98,31 @@
                 </div>
 
                 <?php
-<<<<<<< HEAD
-                  //Se hacen los count que se mostraran en la pantalla principal
-=======
                 $id_usuario = $_POST["id_usuario"];
                   //Se hacen los count que se mostraran en la pantalla principal (dashboard)
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
                   //Count para las subastas disponibles
                   $res_count=$bd->select("SELECT count(*) as total from subasta where estado=0");
                   $data=mysqli_fetch_array($res_count);
                   $count_sub = $data['total'];//En esta variable se guardan el total
 
                   //Count para productos en mi cesta
-<<<<<<< HEAD
-                  $res_count=$bd->select("SELECT count(*) as total from cesta where id_usuario=".$_SESSION["id_usuario"]);
-=======
                   $sentencia = $mysqli->prepare("SELECT count(*) as total from cesta where id_usuario=?");
                   $sentencia->bind_param("i", $id_usuario);
                   $sentencia->execute();
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
                   $data=mysqli_fetch_array($res_count);
                   $count_cesta = $data['total'];//En esta variable se guardan el total
 
                   //Count para las subastas propias activas
-<<<<<<< HEAD
-                  $res_count=$bd->select("SELECT count(*) as total from subasta where estado=0 and subastador=".$_SESSION["id_usuario"]);
-=======
                   $sentencia = $mysqli->prepare("SELECT count(*) as total from subasta where estado=0 and subastador=?");
                   $sentencia->bind_param("i", $id_usuario);
                   $sentencia->execute();
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
                   $data=mysqli_fetch_array($res_count);
                   $count_sub_act = $data['total'];//En esta variable se guardan el total
 
                   //Count para las subastas propias cerradas
-<<<<<<< HEAD
-                  $res_count=$bd->select("SELECT count(*) as total from subasta where estado=1 and subastador=".$_SESSION["id_usuario"]);
-=======
                   $sentencia = $mysqli->prepare("SELECT count(*) as total from subasta where estado=1 and subastador=?");
                   $sentencia->bind_param("i", $id_usuario);
                   $sentencia->execute();
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
                   $data=mysqli_fetch_array($res_count);
                   $count_sub_cerr = $data['total'];//En esta variable se guardan el total
                 ?>
@@ -168,11 +137,7 @@
                                         <i class="fa fa-th-list fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-<<<<<<< HEAD
-                                        <div class="huge"><?php echo $count_sub;//Aqui se imprime el total?></div>
-=======
                                         <div class="huge"><?php echo $count_sub;//Aqui se imprime el total de subastas disponibles?></div>
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
                                         <div>Subastas disponibles</div>
                                     </div>
                                 </div>
@@ -194,11 +159,7 @@
                                         <i class="fa fa-shopping-cart fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-<<<<<<< HEAD
-                                      <div class="huge"><?php echo $count_cesta;//Aqui se imprime el total?></div>
-=======
                                       <div class="huge"><?php echo $count_cesta;//Aqui se imprime el total de ganado en carrito?></div>
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
                                       <div>Carrito</div>
                                     </div>
                                 </div>
@@ -220,11 +181,7 @@
                                         <i class="fa fa-unlock fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-<<<<<<< HEAD
-                                      <div class="huge"><?php echo $count_sub_act;//Aqui se imprime el total?></div>
-=======
                                       <div class="huge"><?php echo $count_sub_act;//Aqui se imprime el total de suabstas activas?></div>
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
                                       <div>Subastas activas</div>
                                     </div>
                                 </div>
@@ -246,11 +203,7 @@
                                         <i class="fa fa-lock fa-5x"></i>
                                     </div>
                                     <div class="col-xs-9 text-right">
-<<<<<<< HEAD
-                                      <div class="huge"><?php echo $count_sub_cerr;//Aqui se imprime el total?></div>
-=======
                                       <div class="huge"><?php echo $count_sub_cerr;//Aqui se imprime el total de subastas cerradas?></div>
->>>>>>> 88644aa51f56bc7d57bedbc32abb213a9a0d8337
                                       <div>Subastas cerradas</div>
                                     </div>
                                 </div>
